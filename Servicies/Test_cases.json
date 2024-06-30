@@ -1,0 +1,28 @@
+{
+    "cases": [
+        {
+            "number": "1",
+            "priority_id": "1",
+            "priority_name": "Молния",
+            "text": "тест 1"
+        },
+        {
+            "number": "2",
+            "priority_id": "2",
+            "priority_name": "Высокий",
+            "text": "тест 2"
+        },
+        {
+            "number": "3",
+            "priority_id": "3",
+            "priority_name": "Средний",
+            "text": "тест 3"
+        },
+        {
+            "number": "4",
+            "priority_id": "1",
+            "priority_name": "Молния",
+            "text": "тест 4"
+        }
+    ]
+}
