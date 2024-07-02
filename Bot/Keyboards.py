@@ -1,13 +1,14 @@
 from telebot import types
 
-
 def useful_links():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-    button1 = types.KeyboardButton('Полезные таблицы')
-    button2 = types.KeyboardButton('Полезные статьи')
-    button3 = types.KeyboardButton('Работа с сервисом Grafana')
-    button4 = types.KeyboardButton('Ссылки на чаты')
-    markup.add(button1, button2, button3, button4)
+    buttons = [
+        types.KeyboardButton('Полезные таблицы'),
+        types.KeyboardButton('Полезные статьи'),
+        types.KeyboardButton('Работа с сервисом Grafana'),
+        types.KeyboardButton('Ссылки на чаты')
+    ]
+    markup.add(*buttons)
     return markup
 
 def create_links_keyboard(links):
@@ -19,10 +20,12 @@ def create_links_keyboard(links):
 
 def communication_inlaine_keyboards():
     type_communications = types.InlineKeyboardMarkup()
-    button1 = types.InlineKeyboardButton('Наблюдается ошибка', callback_data='error_communication')
-    button2 = types.InlineKeyboardButton('Для информации', callback_data='attention_communication')
-    button3 = types.InlineKeyboardButton('Ошибка исправлена', callback_data='fixed_communication')
-    type_communications.add(button1, button2, button3)
+    buttons = [
+        types.InlineKeyboardButton('Наблюдается ошибка', callback_data='error_communication'),
+        types.InlineKeyboardButton('Для информации', callback_data='attention_communication'),
+        types.InlineKeyboardButton('Ошибка исправлена', callback_data='fixed_communication')
+    ]
+    type_communications.add(*buttons)
     return type_communications
 
 def create_priority_keyboard(priorities):
@@ -31,4 +34,3 @@ def create_priority_keyboard(priorities):
         button = types.InlineKeyboardButton(text=priority, callback_data=priority)
         keyboard.add(button)
     return keyboard
-

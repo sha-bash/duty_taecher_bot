@@ -17,12 +17,6 @@
             "priority_id": "3",
             "priority_name": "Средний",
             "text": "тест 3"
-        },
-        {
-            "number": "4",
-            "priority_id": "1",
-            "priority_name": "Молния",
-            "text": "тест 4"
         }
     ]
 }

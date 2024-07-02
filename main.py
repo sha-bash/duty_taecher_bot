@@ -1,6 +1,7 @@
 import telebot
 from telebot import types
-from Bot.main_bot import main_bot
+from Bot.main_bot import MainBot
+from Bot.admin_bot import AdminBot
 from Database.database import DatabaseManager
 from Config.config import read_json
 
@@ -9,10 +10,11 @@ config_path = 'Config/config.json'
 config = read_json(config_path)
 bot_token = config['telegram']['key']
 
-dbmanager = DatabaseManager()
-mainbot = main_bot()
-
 bot = telebot.TeleBot(bot_token)
+
+dbmanager = DatabaseManager()
+mainbot = MainBot()
+adminbot = AdminBot(bot)
 
 # Обработчик команды /start
 @bot.message_handler(commands=['start'])
@@ -31,7 +33,11 @@ def communication_command(message):
 
 @bot.message_handler(commands=['test_cases'])
 def test_cases_command(message):
-    mainbot.Test_cases(bot, message)
+    mainbot.handle_test_cases(bot, message)
+
+@bot.message_handler(commands=['admin_panel'])
+def admin_panel_command(message):
+    adminbot.admin_panel_callback(message)
 
 # Обработчик текстовых сообщений
 @bot.message_handler(content_types=['text'])
@@ -46,6 +52,7 @@ def callback_query(call):
 
 if __name__ == '__main__':
     dbmanager.create_tables()
-   # dbmanager.add_ptiority()
+    dbmanager.load_data_from_json('Servicies/Test_cases.json')
+    #dbmanager.add_ptiority()
     
     bot.polling(none_stop=True)
