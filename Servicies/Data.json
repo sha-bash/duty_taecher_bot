@@ -1,31 +1,31 @@
 {
     "tables": [
         {
-            "title": "Команды и руководители",
-            "url": "https://docs.google.com/spreadsheets/d/1FW4Aq5Uedx7_HUfNLtRLLolvRZxoRUM-eTwOzNhcOwQ/edit#gid=0"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         },
         {
-            "title": "2л Инциденты и отчеты",
-            "url": "https://docs.google.com/spreadsheets/d/1PobjdZc2U7Lv5GX1uxYNCZBIkSuXz9_f--OyIL8bjcE/edit#gid=2034249840&range=4:4"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         },
         {
-            "title": "⚡⚡ МС ВкусВилл - инструкция по молниям ⚡⚡",
-            "url": "https://docs.google.com/spreadsheets/d/1nXy-M4XZ2Dh_w0YMrEH1kaaEiv7s0lQDOShfF6ECjOI/edit#gid=0"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         },
         {
-            "title": "Отчет по алармам VV_online",
-            "url": "https://docs.google.com/spreadsheets/d/1bTsZbhQ0onPnDNsXu5CR8kRRC--fYzeV7hn49D7757I/edit#gid=0"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         }
     ],
 
     "books": [
         {
-            "title": "Инструкция по дежурству",
-            "url": "https://docs.google.com/document/d/1Kg90UIg--Dlv0SZnWTYcDwwLsHKYKEeT/edit#heading=h.gjdgxs"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         },
         {
-            "title": "Шаблон коммуникации",
-            "url": "https://docs.google.com/document/d/1l1SExVayPWv0qm2CwT6RFW2KK5gIXcMQUsozbcu0CI0/edit"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         },
         {
             "title": "Таблица 2",
@@ -44,19 +44,19 @@
     
     "grafana": [
         {
-            "title": "Графики в сервисе Grafanа",
-            "url": "https://grafana-vv.vkusvill.ru/d/mb2Tdksnz/mobile-backend-ops?orgId=1&refresh=15s&from=now-15m&to=now"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         },
         {
-            "title": "Инструкция по Grafana",
-            "url": "https://bookstack.int.vkusvill.ru/books/reanimatsiya-mp-vv/page/opredelenie-problem-s-mobilnym-prilozheniem-cherez-grafana"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         }
     ],
 
     "chatbots": [
         {
-            "title": "Service Desk – Боевой Бот Бегущего опоссума",
-            "url": "https://t.me/VV_ServiceDesk_bot"
+            "title": "Таблица 2",
+            "url": "https://example.com/link2"
         },
         {
             "title": "имя бота",
