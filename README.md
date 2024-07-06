@@ -24,7 +24,7 @@
 
 ## Структура базы данных
 
-![Схема БД](Servicies\res\db.png)
+![Схема БД](Servicies/res/db.png)
 
 ### Таблица `users`
 - **id**: SERIAL PRIMARY KEY
